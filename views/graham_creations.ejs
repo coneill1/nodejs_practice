@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <% include ./partials/page/head.ejs %>
+</head>
+
+<body data-spy='scroll' data-target='.navbar-collapse' data-offset='50'>
+    <!-- home section -->
+    <section id="home" class="d-flex align-items-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-sm-12 d-flex flex-column align-items-center">
+                    <h1 class="wow bounceInDown">Graham Creations</h1>
+                    <h2 class="wow bounce">Special Events</h2>
+                    <a href="#intro" class="btn btn-default smoothScroll">GET STARTED</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- home section end -->
+
+    <!-- navigation section 1 -->
+    <nav class="navbar navbar-toggleable-sm bg-faded d-flex sticky-top">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#main-nav-collapse" aria-controls="main-nav-collapse" aria-expanded="false" aria-label="Toggle Navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        <div class="container">
+
+            <div class="row navbar-brand smoothScroll">
+                <!-- <div class="col d-flex justify-content-center">
+                        <img class="chair-icon" src="images/chair.svg" alt="logo" height="80">
+                    </div> -->
+                <div class="col">Graham Creations</div>
+            </div>
+
+
+            <div class="collapse navbar-collapse" id="main-nav-collapse">
+                <ul class="nav navbar-nav nav-tabs">
+                    <a id='homeLink' class="nav-item nav-link smoothScroll" href="#home">HOME</a>
+                    <a id='introLink' class="nav-item nav-link smoothScroll" href="#intro">INTRO</a>
+                    <a class="nav-item nav-link smoothScroll" href="#inventory">INVENTORY</a>
+                    <a class="nav-item nav-link smoothScroll" href="#preview">PREVIEW</a>
+                    <a class="nav-item nav-link smoothScroll" href="#pricing">PRICING</a>
+                    <a class="nav-item nav-link smoothScroll" href="#contact">CONTACT</a>
+                </ul>
+            </div>
+            <!-- collapse -->
+        </div>
+        <!-- container -->
+    </nav>
+    <!-- nav -->
+    <!-- navigation section 1 end -->
+
+    <!-- intro section -->
+    <section id="intro">
+        <div class="container">
+            <div class="row d-flex flex-column align-items-center">
+                <div class="col-md-offset-2 col-md-8 col-sm-offset-1 col-sm-10">
+                    <h4>WELCOME TO GRAHAM DECOR</h4>
+                    <h2>Decorations &amp; Furniture</h2>
+                    <hr />
+                    <p>Here we can give an intro about Graham Decor and what we can provide to families wanting to hold large events</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- intro section end -->
+
+    <!-- inventory section -->
+    <section id="inventory">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-4 title">
+                    <h2>Items</h2>
+                    <hr />
+                    <p>Here are all of the types of decorations and furniture we provide</p>
+                </div>
+                <div class="col-md-8 col-sm-8">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 bg-black">
+                            <div class="chair-gallery hidden">
+                                <a href="images/chair1.jpg" data-lightbox-gallery="chair-gallery"><img src="images/chair1.jpg" /></a>
+                                <a href="images/chair2.jpg" data-lightbox-gallery="chair-gallery"><img src="images/chair2.jpg" /></a>
+                                <a href="images/chair3.jpg" data-lightbox-gallery="chair-gallery"><img src="images/chair3.jpg" /></a>
+                            </div>
+                            <i class="fa fa-bed"></i>
+                            <h3>Tables &amp; Chairs</h3>
+                        </div>
+                        <div class="col-md-6 col-sm-6 bg-green">
+                            <div class="dishes-gallery hidden">
+                                <a href="images/dishes1.jpg" data-lightbox-gallery="dishes-gallery"><img src="images/dishes1.jpg" /></a>
+                                <a href="images/dishes2.jpg" data-lightbox-gallery="dishes-gallery"><img src="images/dishes2.jpg" /></a>
+                                <a href="images/dishes3.jpg" data-lightbox-gallery="dishes-gallery"><img src="images/dishes3.jpg" /></a>
+                            </div>
+                            <i class="fa fa-beer"></i>
+                            <h3>Dishes</h3>
+                        </div>
+                        <div class="col-md-6 col-sm-6 bg-green">
+                            <div class="decor-gallery hidden">
+                                <a href="images/decor1.jpg" data-lightbox-gallery="decor-gallery"><img src="images/decor1.jpg" /></a>
+                                <a href="images/decor2.jpg" data-lightbox-gallery="decor-gallery"><img src="images/decor2.jpg" /></a>
+                                <a href="images/decor3.jpg" data-lightbox-gallery="decor-gallery"><img src="images/decor3.jpg" /></a>
+                            </div>
+                            <i class="fa fa-trophy"></i>
+                            <h3>Decor</h3>
+                        </div>
+                        <div class="col-md-6 col-sm-6 bg-black">
+                            <div class="tent-gallery hidden">
+                                <a href="images/tent1.jpg" data-lightbox-gallery="tent-gallery"><img src="images/tent1.jpg" /></a>
+                                <a href="images/tent2.jpg" data-lightbox-gallery="tent-gallery"><img src="images/tent2.jpg" /></a>
+                                <a href="images/tent3.jpg" data-lightbox-gallery="tent-gallery"><img src="images/tent3.jpg" /></a>
+                            </div>
+                            <i class="fa fa-home"></i>
+                            <h3>Tent</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- inventory section end -->
+
+    <!-- preview section -->
+    <section id="preview">
+        <div class="container">
+            <div class="row d-flex flex-column align-items-center">
+                <div class="col-md-offset-3 col-md-6 col-sm-offset-2 col-sm-8 title">
+                    <h2>Preview</h2>
+                    <hr />
+                    <p>Here are some photos of our stuff being used. </p>
+                </div>
+                <div class="col-md-12 col-smprev1"></div>
+                <div class="row">
+                    <div class="col-md-3 col-sm-3">
+                        <a href="images/prev1.jpg" data-lightbox-gallery="portfolio-gallery"><img src="images/prev1.jpg" class="img-fluid" /></a>
+                    </div>
+                    <div class="col-md-3 col-sm-3">
+                        <a href="images/prev2.jpg" data-lightbox-gallery="portfolio-gallery"><img src="images/prev2.jpg" class="img-fluid" /></a>
+                    </div>
+                    <div class="col-md-3 col-sm-3">
+                        <a href="images/prev3.jpg" data-lightbox-gallery="portfolio-gallery"><img src="images/prev3.jpg" class="img-fluid" /></a>
+                    </div>
+                    <div class="col-md-3 col-sm-3">
+                        <a href="images/prev4.jpg" class="img4" data-lightbox-gallery="portfolio-gallery"><img class="img4" src="images/prev4.jpg" class="img-fluid" /></a>
+                    </div>
+                    <div class="col-md-3 col-sm-3">
+                        <a href="images/prev5.jpg" data-lightbox-gallery="portfolio-gallery"><img class="img5" src="images/prev5.jpg" class="img-fluid" /></a>
+                    </div>
+                    <div class="col-md-3 col-sm-3">
+                        <a href="images/prev6.jpg" data-lightbox-gallery="portfolio-gallery"><img class="img6" src="images/prev6.jpg" class="img-fluid" /></a>
+                    </div>
+                    <div class="col-md-3 col-sm-3">
+                        <a href="images/prev7.jpg" data-lightbox-gallery="portfolio-gallery"><img src="images/prev7.jpg" class="img-fluid" /></a>
+                    </div>
+                    <div class="col-md-3 col-sm-3">
+                        <a href="images/prev8.jpg" data-lightbox-gallery="portfolio-gallery"><img src="images/prev8.jpg" class="img-fluid" /></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- preview section end -->
+
+    <!-- pricing section -->
+    <section id='pricing'>
+        <div class='container'>
+            <div class='row d-flex flex-column align-items-center'>
+                <div class='col-md-offset-3 col-md-6 col-sm-col-sm-6 title wow fadeInDownBig'>
+                    <h2>Pricing</h2>
+                    <hr />
+                </div>
+                <div class='col-md-6 col-sm-6'>
+                    <div class='inventory_pricing bg-faded wow fadeInLeftBig'>
+                        <div class='inventory_pricing_title'>
+                            <h3>Items</h3>
+                        </div>
+                        <ul>
+                            <li>Decor - $10</li>
+                            <li>Tables - $5/table</li>
+                            <li>Chairs - $2/chair</li>
+                            <li>Tent - $100</li>
+                            <li>Labor - $20</li>
+                        </ul>
+                        <button class="btn btn-secondar" id="start_renting_btn" type="button">Get Started</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end pricing section -->
+
+    <!-- contact section -->
+    <section id="contact">
+        <div class="container">
+            <div class="row d-flex flex-column align-items-center">
+                <div class="col-md-offset-3 col-md-6 col-sm-offset-2 col-sm-8 title">
+                    <h2>Contact Us</h2>
+                    <hr />
+                    <p>If you have any questions about inventory or pricing please send us an email.</p>
+                </div>
+                <div class="col-md-offset-3 col-md-6 col-sm-offset-2 col-sm-8 contact-form">
+                    <form action="#" method="post">
+                        <input type="text" class="form-control" placeholder="Name" name="name">
+                        <input type="email" class="form-control" placeholder="Email" name="email">
+                        <textarea class="form-control" placeholder="Message" rows="6" name="message"></textarea>
+                        <input type="submit" class="form-control" value="SEND EMAIL">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- contact section end -->
+
+    <footer id="footer">
+        <button type="button" class="btn btn-primary btn-footer" data-toggle="modal" data-target="#exampleModal">Rent</button>
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Rent</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-6"><label for="rent_chairs" class="form-control-label">Chairs - $5 each</label></div>
+                                    <div class="col-md-4 col-sm-4"><input type="number" name="amt_chairs" min="0" class="form-control" id="rent_chairs"></div>
+                                    <div class="col-md-2 col-sm-2"><i class="fa fa-plus"></i></div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-6"><label for="rent_tables" class="form-control-label">Tables - $10 each</label></div>
+                                    <div class="col-md-4 col-sm-4"><input type="number" name="amt_tables" min="0" class="form-control" id="rent_tables"></div>
+                                    <div class="col-md-2 col-sm-2"><i class="fa fa-plus"></i></div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-6"><label for="rent_decor" class="form-control-label">Decor</label></div>
+                                    <div class="col-md-4 col-sm-4"><input type="text" class="form-control" id="rent_decor"></div>
+                                    <div class="col-md-2 col-sm-2"><i class="fa fa-plus"></i></div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-6"><label for="rent_dishes" class="form-control-label">Dishes</label></div>
+                                    <div class="col-md-4 col-sm-4"><input type="text" class="form-control" id="rent_dishes"></div>
+                                    <div class="col-md-2 col-sm-2"><i class="fa fa-plus"></i></div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-6"><label for="rent_tents" class="form-control-label">Tents</label></div>
+                                    <div class="col-md-4 col-sm-4"><input type="text" class="form-control" id="rent_tents"></div>
+                                    <div class="col-md-2 col-sm-2"><i class="fa fa-plus"></i></div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-6"><label for="rent_schedule" class="form-control-label">Dates</label></div>
+                                    <div class="col-md-4 col-sm-4"><input type="week" name="rent_time" class="form-control" id="rent_schedule"></div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- modal-body -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Send message</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <% include ./partials/page/jsdefaults.ejs %>
+</body>
+
+</html>

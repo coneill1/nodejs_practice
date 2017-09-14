@@ -1,0 +1,4 @@
+tables    \N    table_sqr_kids1.jpg
+tables    \N    table-sqr1.jpg
+tables    \N    table-rd1.jpg
+chairs    \N    chair_basic1.jpg

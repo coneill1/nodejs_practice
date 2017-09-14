@@ -1,0 +1,50 @@
+<!doctype html>
+
+<html>
+	<head>
+		<% include ./partials/page/head.ejs %>
+	</head>
+        
+	<body>
+        <h1><%= title %></h1>
+        <div class="container" id="inventory_listings">
+            <h2>Tables</h2>
+            <div class="row align-items-center tables"></div>
+            <h2>Chairs</h2>
+            <div class="row align-items-center chairs"></div>
+            <h2>Tents</h2>
+            <div class="row align-items-center tents"></div>
+            <h2>Decor</h2>
+            <div class="row align-items-center decor"></div>
+            <h2>Dishes</h2>
+            <div class="row align-items-center dishes"></div>            
+        </div>
+        <% include ./partials/page/jsdefaults.ejs %>
+	</body>
+    <!--<script src="js/inventory_script.js"></script>-->
+    <script type="text/javascript">
+        function createInventoryListing (items, type) {
+            
+            console.log(items);
+            
+            var data = JSON.parse(items);
+            
+            console.log(data);
+            
+            if(typeof data === 'object') {
+                data.forEach(function(obj) {
+                    $('#inventory_listings .' + type).append(`
+                        <div class='col-md-4 col-sm-4 text-center'>
+                            <img src='images/${type}/${obj.img_file}' class='img-thumbnail' />
+                        </div>
+                    `);
+                }); 
+            }
+            else {
+                console.log('not a json object...');
+            }
+        }
+        createInventoryListing(<%- JSON.stringify(tables) %>, 'tables');
+        createInventoryListing(<%- JSON.stringify(chairs) %>, 'chairs');        
+    </script>
+</html>
